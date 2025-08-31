@@ -1,0 +1,39 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  background-color: #0a0f1f; /* very dark blue */
+}
+
+.notify-button {
+  background-color: #1e3a8a; /* less intense blue */
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.notify-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.notify-button:active {
+  transform: scale(0.98);
+}
+.notify-button:disabled {
+  background-color: #4b5563; /* gray */
+  cursor: not-allowed;
+}
